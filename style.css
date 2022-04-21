@@ -1,13 +1,13 @@
-body{
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-background-color: gray;
+body {
+  font-family: Poppins, sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  background-color: gray;
 }
 
 .space {
-margin: 0 5%;
+  margin: 0 5%;
 }
 
 .menu {
@@ -17,20 +17,20 @@ margin: 0 5%;
   text-decoration: none;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 20px;
 }
+
 /* flex container */
 .toolbar {
   display: flex;
   align-items: center;
-
-
 }
+
 .toolbar ul {
   display: flex;
   flex: 1;
@@ -47,16 +47,16 @@ margin: 0 5%;
   margin: 0 10px;
 }
 
-.toolbar div{
+.toolbar div {
   flex: 2;
 }
 
-.headline{
+.headline {
   display: flex;
   flex-direction: column;
   flex: 1;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-image: url('Img/Headerbg@2x.png');
   background-repeat: no-repeat;
   background-size: cover;
