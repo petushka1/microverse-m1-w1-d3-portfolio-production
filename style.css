@@ -94,7 +94,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  background-image: url('Img/Header bg@2x.png');
+  background-image: url('Img/Headerbg@2x.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -118,7 +118,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-: 5% 5% 0 5%;
+    padding: 5% 5% 0 5%;
     margin: 0;
   }
 
