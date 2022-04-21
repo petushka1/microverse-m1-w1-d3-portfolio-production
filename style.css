@@ -1,5 +1,5 @@
 body {
-  font-family: Poppins, sans-serif;;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -9,6 +9,7 @@ body {
 .mobmenu {
   display: none;
 }
+
 .logo {
   font-weight: 700;
   font-size: 18px;
@@ -51,7 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 /* flex container */
@@ -66,7 +67,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .liststyle {
@@ -93,7 +93,7 @@ body {
   flex: 1;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #fff;
   background-image: url('Img/Header bg@2x.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,25 +102,26 @@ body {
 .headline ul {
   display: inline-flex;
   padding: 0;
-
 }
 
 .headline li {
   align-self: flex-start;
-  margin: 10px 10px 50px 0;
+  margin: 10px 15px 50px 0;
 }
 
 @media only screen and (max-width: 600px) {
   .toolbar {
     display: none;
   }
+
   .mobmenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5% 5% 0 5%;
+    padding-: 5% 5% 0 5%;
     margin: 0;
   }
+
   .logo {
     padding: 0;
     margin: 0;
