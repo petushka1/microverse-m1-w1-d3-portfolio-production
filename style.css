@@ -299,7 +299,7 @@ body {
 
 .item1 img {
   max-width: 544px;
-  width: 100%
+  width: 100%;
   height: auto;
 }
 
@@ -364,7 +364,7 @@ body {
   color: #396df2;
   border: solid #396df2 2px;
   border-radius: 6px;
-  padding: 15px 32px;
+  padding: 12px 12px;
   background-color: #fff;
   text-align: center;
   text-decoration: none;
@@ -373,5 +373,52 @@ body {
   margin: 20px 0 20px 0;
 }
 
+.btn:hover {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  border: solid #396df2 2px;
+  border-radius: 6px;
+  padding: 12px 12px;
+  background-color: #6070ff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0 20px 0;
+}
+
+.btn:active {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  border: solid #396df2 2px;
+  border-radius: 6px;
+  padding: 12px 12px;
+  background-color: #2230d2;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0 20px 0;
+}
+
+.btn:disabled {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #5e6c84;
+  border: solid #5e6c84 2px;
+  border-radius: 6px;
+  padding: 12px 12px;
+  background-color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 0 20px 0;
+}
 
 }
