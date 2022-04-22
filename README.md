@@ -56,3 +56,25 @@ Debug HTML and CSS files if checks were unsuccessful
 👤 **Nadia Levina**
 
 - GitHub: [@petushka1](https://github.com/petushka1)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Figma design template and guidance are the part of [Micloverse](https://github.com/microverseinc) learning program
+- Motivated and inspired by Micloverse.
+> Talent is everywhere, but opportunity is not
+
+**Visit Microverse [site](https://www.microverse.org/) and start your journey!**
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

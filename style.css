@@ -3,7 +3,17 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  background-color: gray;
+  line-height: 28px;
+  color: #344563;
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #091E42;
 }
 
 .mobmenu {
@@ -30,8 +40,11 @@ body {
   line-height: 20px;
 }
 
-.menu a {
+.linkstyle a {
   text-decoration: none;
+}
+
+.gray {
   color: gray;
 }
 
@@ -42,6 +55,10 @@ body {
 
 .pressed:active {
   color: #6070ff;
+}
+
+.logo a:hover {
+  opacity: 0.5;
 }
 
 .round {
@@ -96,7 +113,8 @@ body {
   background-color: #fff;
   background-image: url('Img/Headerbg@2x.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: top;
+  background-size: contain;
 }
 
 .headline ul {
@@ -125,5 +143,20 @@ body {
   .logo {
     padding: 0;
     margin: 0;
+  }
+
+  body {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    margin: 0;
+    padding: 0;
+  }
+
+  .widemob {
+    width: auto;
   }
 }
