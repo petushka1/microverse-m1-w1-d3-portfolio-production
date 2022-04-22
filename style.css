@@ -278,9 +278,9 @@ h2 {
 
   .mobspace {
     margin: 0 5%;
-    }
+  }
 
-/* Project section */
+  /* Project section */
   .wrapper {
     display: flex;
     justify-content: space-between;
@@ -361,7 +361,6 @@ h2 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     margin: 20px 0 20px 0;
   }
 
@@ -377,7 +376,6 @@ h2 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     margin: 20px 0 20px 0;
   }
 
@@ -393,7 +391,6 @@ h2 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     margin: 20px 0 20px 0;
   }
 
@@ -409,8 +406,6 @@ h2 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     margin: 20px 0 20px 0;
   }
-
 }
