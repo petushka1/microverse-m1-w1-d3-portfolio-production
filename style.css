@@ -128,6 +128,13 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .headline {
+    background-color: #fff;
+    background-image: url('Img/header-shapes mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .toolbar {
     display: none;
   }
