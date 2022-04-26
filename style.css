@@ -488,4 +488,31 @@ h2 {
     margin-bottom: 45px;
   }
 
+  .contact-btn:disabled {
+    align-self: flex-start;
+    padding: 12px;
+    color: #5e6c84;
+    border: solid #5e6c84 2px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 12px;
+    margin-bottom: 45px;
+  }
+
+  .contact-btn:hover {
+    align-self: flex-start;
+    padding: 12px;
+    color: #fff;
+    border: solid #396df2 2px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 12px;
+    margin-bottom: 45px;
+  }
+
+
 }
