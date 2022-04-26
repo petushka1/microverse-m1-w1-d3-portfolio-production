@@ -420,6 +420,7 @@ h2 {
     background-color: #6070ff;
     background-image: url('img/contact-background.svg');
     background-repeat: no-repeat;
+
     /* background-size: cover; */
     background-position: right 21px;
     border-top-left-radius: 80px;
@@ -432,10 +433,9 @@ h2 {
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
-
   }
 
-.form-wrapper p {
+  .form-wrapper p {
     align-self: center;
     text-align: center;
     color: #ebebff;
@@ -444,7 +444,7 @@ h2 {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-}
+  }
 
   .contact {
     width: 80%;
@@ -468,15 +468,16 @@ h2 {
     padding: 10px;
     color: #172b4d;
     border-radius: 8px;
-    border: 1px solid #CFD8DC;
+    border: 1px solid #cfd8dc;
   }
 
   .contact ul li textarea {
     padding: 10px;
     color: #172b4d;
     border-radius: 8px;
-    border: 1px solid #CFD8DC;
+    border: 1px solid #cfd8dc;
   }
+
   .contact-btn {
     align-self: flex-start;
     padding: 12px;
@@ -513,6 +514,5 @@ h2 {
     border-radius: 12px;
     margin-bottom: 45px;
   }
-
-
+  
 }
