@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -196,6 +199,35 @@
                 <button class="btn" type="button" name="details">See project</button>
               </div>
         </div>
+
+      </section>
+
+      <section class="form-wrapper">
+
+          <h2>
+            Contact me
+          </h2>
+          <p>
+            If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
+          </p>
+
+          <form class="contact" action="https://formspree.io/f/xzbokeqo" method="post">
+            <ul>
+              <li>
+                <input type="text" name="username" placeholder="Your Name" maxlength="30" required>
+              </li>
+              <li>
+                <input type="email" name="mail" placeholder="Your email" required>
+              </li>
+              <li>
+                <textarea required maxlength="500" name="msg" rows="8" cols="20" placeholder="Write your message here"></textarea>
+              </li>
+              <li>
+                <button class="btn contact-btn" type="submit" name="btn">Get in touch</button>
+              </li>
+            </ul>
+          </form>
+
 
 
 
