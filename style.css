@@ -94,6 +94,7 @@ body {
   justify-content: center;
   align-self: stretch;
   background-color: #fff;
+
 }
 
 /* flex container */
@@ -101,8 +102,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  align-self: center;
-  min-width: 1440px;
+  width: 90%;
+
 }
 
 .toolbar ul {
@@ -127,8 +128,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  max-width: 920px;
-  padding: 72px 0;
+
+  padding: 72px 20%;
 
 }
 
@@ -174,7 +175,6 @@ h2 {
 .snapshot {
   width: 100%;
   height: auto;
-  min-width: 544px;
   padding: 0;
   margin: 0;
 
@@ -186,61 +186,78 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 0 9.86%;
+  margin: 142px 9.86% 0 9.86%;
 }
 
 .grid-container {
   display: grid;
   align-self: center;
   background-color: #fff;
-  grid-template-columns: auto auto;
-  column-gap: 40px;
+  grid-template-columns: auto;
   padding: 24px;
-  margin-top: 142px;
-
+  grid-row-gap: 142px;
 }
-
-
 
 .item1 {
-  grid-area: 1 / 1 / 6 / 2;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5%;
+}
+
+
 .item2 {
-  grid-area: 1 / 2 / 2 / 3;
+  grid-area: 2 / 1 / 3 / 2;
   align-self: start;
 }
 
 .item3 {
-  grid-area: 2 / 2 / 3 / 3;
+  grid-area: 3 / 1 / 4 / 2;
   align-self: start;
 }
 
 .item4 {
-  grid-area: 3 / 2 / 4 / 3;
+  grid-area: 4 / 1 / 5 / 2;
   align-self: start;
 }
 
 .item5 {
-  grid-area: 4 / 2 / 5 / 3;
+  grid-area: 5 / 1 / 6 / 2;
   align-self: start;
 }
 
 .item6 {
-  grid-area: 5 / 2 / 6 / 3;
+  grid-area: 5 / 1 / 6 / 2;
   align-self: start;
 }
 
 
 /* second block */
+.item-flex ul, h2, p, button {
+  align-self: start;
+}
+
 .spec {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
-.spec img {
-  padding: 0 20px 0 20px;
+.spec li{
+  padding-right: 20px;
 }
 
 .lng {
@@ -479,20 +496,23 @@ padding: 0 9.86%;
   }
 
   .headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
     background-color: #fff;
     background-image: url('Img/header-shapes mobile.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 25%;
+    height: vh;
   }
 
   .headline ul {
-    padding: 10px;
+    padding-right: 10px;
   }
 
-  .wide {
-    max-width: 90%;
-  }
+
 
   .toolbar {
     display: none;
@@ -502,8 +522,8 @@ padding: 0 9.86%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    align-self: center;
-    padding: 20 5% 0 5%;
+    width: 90%;
+    padding: 20px 5% 0 5%;
   }
 
 
@@ -525,6 +545,13 @@ padding: 0 9.86%;
     flex-direction: column;
     align-content: center;
     width: 100%;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .item1 img {
@@ -568,9 +595,21 @@ padding: 0 9.86%;
     margin: 0;
   }
 
+  /* About myself section */
+
+  .about {
+    margin-top: 142px;
+  }
+  .about .grid-container {
+    display: grid;
+    align-self: center;
+    background-color: #fff;
+    grid-template-columns: auto 1fr;
+    column-gap: 40px;
+    padding: 24px 0;
+  }
+
   /* Contact form styling */
-
-
   .contact {
     width: 80%;
   }
