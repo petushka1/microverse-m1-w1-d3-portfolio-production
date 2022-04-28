@@ -27,6 +27,11 @@ body {
   color: #091e42;
 }
 
+.name:hover {
+transition: transform 1s;
+transform: scale(1.5);
+}
+
 .logo {
   flex: 1;
   font-weight: 700;
