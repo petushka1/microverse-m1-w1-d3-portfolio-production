@@ -79,6 +79,7 @@ body {
 .about-list a {
   padding: 0;
 }
+
 /* logo animation */
 .logo a {
   display: inline-block;
@@ -291,6 +292,14 @@ h2 {
   background-color: #ebebff;
   transition-property: background-color font-size color;
   transition-duration: 200ms 500ms 200ms;
+}
+
+.lng-list li {
+  background-color: #f7f7f9;
+  justify-content: center;
+  align-self: stretch;
+  border-radius: 10px;
+  margin: 0;
 }
 
 .lng li:hover {
@@ -538,14 +547,6 @@ textarea {
   display: flex;
   gap: 10px;
   padding: 0;
-  margin: 0;
-}
-
-.lng-list li {
-  background-color: #f7f7f9;
-  justify-content: center;
-  align-self: stretch;
-  border-radius: 10px;
   margin: 0;
 }
 
