@@ -28,11 +28,12 @@ body {
 }
 
 .logo {
-    flex: 1;
+  flex: 1;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
 }
+
 
 /* color */
 .blue {
@@ -71,8 +72,15 @@ body {
   color: #6070ff;
 }
 
+.logo a {
+  display: inline-block;
+  transition: all 1s;
+}
+
 .logo a:hover {
   opacity: 0.5;
+  font-size: 1.5em;
+  transform: rotate(360deg);
 }
 
 .roundbottom {
