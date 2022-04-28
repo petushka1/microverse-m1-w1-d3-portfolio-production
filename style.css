@@ -272,6 +272,15 @@ h2 {
   padding: 0 20px 0 20px;
   border-radius: 6px;
   background-color: #ebebff;
+  transition-property: background-color font-size color;
+  transition-duration: 200ms 500ms 200ms;
+
+}
+
+.lng li:hover {
+  font-size: 1.2em;
+  background-color: #7a869a;
+  color: #ebebff;
 }
 
 .btn {
@@ -487,6 +496,8 @@ padding: 0 9.86%;
   background-size: contain;
   background-position: center;
 }
+
+
 
 @media only screen and (max-width: 768px) {
 
