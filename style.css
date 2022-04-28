@@ -76,6 +76,9 @@ body {
   color: #6070ff;
 }
 
+.about-list a {
+  padding: 0;
+}
 /* logo animation */
 .logo a {
   display: inline-block;
@@ -163,10 +166,6 @@ body {
   align-self: flex-start;
   padding: 0;
   margin: 0;
-}
-
-.about-list a {
-  padding: 0;
 }
 
 .about-list li {
@@ -276,6 +275,12 @@ h2 {
   display: inline-flex;
   padding: 0;
   margin: 0 0 40px 0;
+}
+
+.skills-list li {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
 }
 
 .lng li {
@@ -493,10 +498,6 @@ textarea {
   background-position: center;
 }
 
-.about {
-  margin-top: 142px;
-}
-
 .about-grid {
   display: grid;
   align-self: center;
@@ -531,12 +532,6 @@ textarea {
   align-self: stretch;
   padding: 0;
   margin: 0;
-}
-
-.skills-list li {
-  display: flex;
-  justify-content: space-between;
-  align-self: stretch;
 }
 
 .lng-list {
@@ -582,7 +577,7 @@ textarea {
   height: 120px;
   font-weight: 500;
   font-size: 15px;
-  line-height: 20px
+  line-height: 20px;
 }
 
 .lng-item p {
@@ -683,7 +678,7 @@ textarea {
   .item-flex {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: stretch;
     align-self: flex-start;
     width: 100%;
     padding: 20px 0 40px 0;
@@ -721,12 +716,6 @@ textarea {
     margin: 0;
   }
 
-  .item-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
   /* About myself section */
   .about {
     margin-top: 142px;
@@ -753,7 +742,6 @@ textarea {
     padding: 0;
     margin: 0;
   }
-
 
   .skills-list {
     display: flex;
