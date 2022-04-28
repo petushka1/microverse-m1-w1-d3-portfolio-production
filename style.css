@@ -269,7 +269,7 @@ button {
   padding-right: 20px;
 }
 
-.contact ul li {
+.contact-li {
   display: flex;
   flex-direction: column;
 }
@@ -602,6 +602,7 @@ textarea {
   .about {
     margin-top: 142px;
   }
+  
   .about-grid {
     display: grid;
     align-self: center;
