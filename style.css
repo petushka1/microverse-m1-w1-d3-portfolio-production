@@ -107,7 +107,6 @@ body {
   justify-content: center;
   align-self: stretch;
   background-color: #fff;
-
 }
 
 /* flex container */
@@ -252,9 +251,9 @@ h2 {
 
 /* second block */
 .item-flex ul,
-  h2,
-  p,
-  button {
+h2,
+p,
+button {
   align-self: start;
 }
 
@@ -266,8 +265,13 @@ h2 {
   padding: 0;
 }
 
-.spec li{
+.spec li {
   padding-right: 20px;
+}
+
+.contact ul li {
+  display: flex;
+  flex-direction: column;
 }
 
 .lng {
@@ -406,11 +410,6 @@ h2 {
   gap: 20px;
 }
 
-.contact ul li {
-  display: flex;
-  flex-direction: column;
-}
-
 .contact ul li input {
   padding: 10px;
   color: #172b4d;
@@ -497,7 +496,6 @@ textarea {
 }
 
 @media only screen and (max-width: 768px) {
-
   /* Welcome section */
   .hdr-bgr {
     background-image: none;
@@ -604,7 +602,7 @@ textarea {
   .about {
     margin-top: 142px;
   }
-  .about .grid-container {
+  .about-grid {
     display: grid;
     align-self: center;
     background-color: #fff;
