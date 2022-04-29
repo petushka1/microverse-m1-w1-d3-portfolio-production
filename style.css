@@ -419,13 +419,11 @@ textarea {
 
 .contact-btn:disabled {
   border: solid #5e6c84 2px;
-
 }
 
 .contact-btn:hover {
   color: #fff;
   border: solid #396df2 2px;
-
 }
 
 .hdr-bgr {
