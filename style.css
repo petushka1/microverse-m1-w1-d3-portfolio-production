@@ -278,11 +278,15 @@ h2 {
   margin: 0 0 40px 0;
 }
 
-.skills-list li {
+
+
+.justify {
   display: flex;
   justify-content: space-between;
-  align-self: stretch;
+  align-items: center;
+
 }
+
 
 .lng li {
   align-self: center;
@@ -294,7 +298,7 @@ h2 {
   transition-duration: 200ms 500ms 200ms;
 }
 
-.lng-list li {
+.lng-list div {
   background-color: #f7f7f9;
   justify-content: center;
   align-self: stretch;
@@ -538,16 +542,20 @@ textarea {
 .skills-list {
   display: flex;
   flex-direction: column;
-  align-self: stretch;
   padding: 0;
   margin: 0;
 }
 
 .lng-list {
-  display: flex;
+  display: inline-flex;
   gap: 10px;
   padding: 0;
   margin: 0;
+}
+
+.lng-list div {
+  display: inline-flex;
+  align-self: flex-start;
 }
 
 .lng-list img {
@@ -572,8 +580,9 @@ textarea {
 .lng-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
+  align-self: flex-start;
   width: 122px;
   height: 120px;
   font-weight: 500;
@@ -753,12 +762,6 @@ textarea {
     margin: 0;
   }
 
-  .skills-list li {
-    display: flex;
-    justify-content: space-between;
-    align-self: stretch;
-  }
-
   .lng-list {
     display: flex;
     flex-direction: column;
@@ -769,9 +772,8 @@ textarea {
     margin: 0;
   }
 
-  .lng-list li {
+  .lng-list div {
     background-color: #f7f7f9;
-    align-self: stretch;
     border-radius: 10px;
     margin: 0;
     height: 100%;
@@ -787,8 +789,6 @@ textarea {
   }
 
   .line {
-    display: flex;
-    align-self: stretch;
     background-color: #dfe1e6;
     height: 1px;
   }
