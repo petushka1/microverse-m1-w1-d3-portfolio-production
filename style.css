@@ -278,15 +278,11 @@ h2 {
   margin: 0 0 40px 0;
 }
 
-
-
 .justify {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
-
 
 .lng li {
   align-self: center;
@@ -551,11 +547,6 @@ textarea {
   gap: 10px;
   padding: 0;
   margin: 0;
-}
-
-.lng-list div {
-  display: inline-flex;
-  align-self: flex-start;
 }
 
 .lng-list img {
