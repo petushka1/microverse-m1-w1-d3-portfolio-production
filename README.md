@@ -1,4 +1,4 @@
-# Microverse Portfolio Progect
+# Microverse Portfolio Project
 ## Milestone 1
 
 Build a developer portfolio.
