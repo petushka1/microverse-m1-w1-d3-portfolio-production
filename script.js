@@ -13,7 +13,6 @@ function closed() {
   div.style.display = 'none';
 }
 
-
 div.className = 'extended';
 
 img.className = 'icon';
