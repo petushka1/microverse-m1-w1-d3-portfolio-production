@@ -1,27 +1,29 @@
 const header = document.querySelector('header');
+const div = document.createElement('div');
+const img = document.createElement('img');
+const ul = document.createElement('ul');
+let li = document.createElement('li');
+let a = document.createElement('a');
 
 function opened() {
-    div.style.display = 'block';
+  div.style.display = 'block';
 }
 
-function closed () {
-    div.style.display = 'none'
+function closed() {
+  div.style.display = 'none';
 }
 
-const div = document.createElement('div');
+
 div.className = 'extended';
-const img = document.createElement('img');
+
 img.className = 'icon';
 img.src = './img/close.svg';
 div.appendChild(img);
 img.addEventListener('click', closed);
 
-const ul = document.createElement('ul');
 ul.className = 'menu-extended';
 div.appendChild(ul);
 
-let li = document.createElement('li');
-let a = document.createElement('a')
 a.href = '#about';
 a.textContent = 'About';
 a.className = 'menu-item';
@@ -49,5 +51,5 @@ a.addEventListener('click', closed);
 
 header.appendChild(div);
 
-let btn = document.querySelector('#hmbrg');
+const btn = document.querySelector('#hmbrg');
 btn.addEventListener('click', opened);
