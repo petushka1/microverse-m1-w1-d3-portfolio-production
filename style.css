@@ -594,6 +594,24 @@ textarea {
     display: none;
   }
 
+  .extended {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(89, 102, 226, 0.8);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    overflow: clip;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+  }
+
   .mobmenu {
     display: flex;
     align-items: center;
