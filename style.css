@@ -29,12 +29,6 @@ label {
   display: none;
 }
 
-.icon {
-  float: right;
-  padding: 10px;
-  cursor: pointer;
-}
-
 .name {
   font-weight: 700;
   font-size: 2.6em;
@@ -615,7 +609,23 @@ textarea {
     overflow: clip;
     color: #fff;
     backdrop-filter: blur(10px);
-    overflow: hidden;
+    overflow: clip;
+  }
+
+  .extended img {
+    float: right;
+    margin: 20px;
+    cursor: pointer;
+  }
+
+  .extended ul {
+    margin-top: 100px;
+    list-style: none;
+  }
+
+  .menu-item {
+    text-decoration: none;
+    color: #fff;
   }
 
   .mobmenu {

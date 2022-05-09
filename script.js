@@ -8,9 +8,7 @@ img.className = 'icon'
 img.src = './img/close.svg'
 div.appendChild(img)
 img.addEventListener('click', closed)
-function closed () {
-    div.style.display = 'none'
-}
+
 let ul =  document.createElement('ul');
 ul.className = 'menu-extended';
 div.appendChild(ul);
@@ -19,27 +17,28 @@ let li = document.createElement('li');
 let a = document.createElement('a')
 a.href = '#about'
 a.textContent = 'About';
-a.style.textDecoration = 'none'
-a.style.color ='white'
+a.className = 'menu-item';
 li.appendChild(a)
 ul.appendChild(li);
+a.addEventListener('click', closed);
+
 li = document.createElement('li');
  a = document.createElement('a');
 a.href = '#projects'
 a.textContent = 'Projects';
-a.style.textDecoration = 'none'
-a.style.color ='white'
+a.className = 'menu-item';
 li.appendChild(a)
 ul.appendChild(li);
+a.addEventListener('click', closed);
 
 li = document.createElement('li');
 a = document.createElement('a');
 a.href = '#contact'
 a.textContent = 'Contact';
-a.style.textDecoration = 'none'
-a.style.color ='white'
+a.className = 'menu-item';
 li.appendChild(a)
 ul.appendChild(li);
+a.addEventListener('click', closed);
 
 header.appendChild(div);
 
@@ -48,4 +47,8 @@ btn.addEventListener('click', opened);
 
 function opened() {
     div.style.display = 'block';
+}
+
+function closed () {
+    div.style.display = 'none'
 }
