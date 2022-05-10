@@ -53,7 +53,8 @@ Check Linters:
 - Webhint
 - Stylelint
 
-Debug HTML and CSS files if checks were unsuccessful
+Debug HTML Javascript and CSS files if checks were unsuccessful
+
 
 
 
@@ -62,6 +63,25 @@ Debug HTML and CSS files if checks were unsuccessful
 👤 **Nadia Levina**
 
 - GitHub: [@petushka1](https://github.com/petushka1)
+
+
+
+## Contributors
+
+👤 **Victor-David**
+
+- GitHub: [@jheart-vic](https://github.com/jheart-vic?tab=repositories)
+
+👤 **Silvia Tofano**
+
+- GitHub: [@silviatofana](https://github.com/silviatofana?tab=repositories)
+
+👤 **Sam Felice**
+
+- GitHub: [@samWfelice](https://github.com/samWfelice?tab=repositories)
+
+
+
 
 ## 🤝 Contributing
 

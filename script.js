@@ -7,14 +7,21 @@ let a = document.createElement('a');
 
 function opened() {
   div.style.display = 'block';
+  document.body.style.overflow = 'hidden';
 }
 
 function closed() {
   div.style.display = 'none';
+  document.body.style.overflow = 'unset';
+}
+
+function resetMenu() {
+  if (window.innerWidth >= 768) {
+    div.style.display = 'none';
+  }
 }
 
 div.className = 'extended';
-
 img.className = 'icon';
 img.src = './img/close.svg';
 div.appendChild(img);
@@ -52,3 +59,5 @@ header.appendChild(div);
 
 const btn = document.querySelector('#hmbrg');
 btn.addEventListener('click', opened);
+
+window.addEventListener('resize', resetMenu);
