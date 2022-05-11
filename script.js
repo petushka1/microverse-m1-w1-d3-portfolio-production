@@ -2,6 +2,7 @@
 //Dynamic mob menu
 const header = document.querySelector('header');
 var div = document.createElement('div');
+var menu = div;
 var img = document.createElement('img');
 var ul = document.createElement('ul');
 var li = document.createElement('li');
@@ -19,7 +20,7 @@ function closed() {
 
 function resetMenu() {
   if (window.innerWidth >= 768) {
-    div.style.display = 'none';
+    menu.style.display = 'none';
   }
 }
 
@@ -66,43 +67,49 @@ window.addEventListener('resize', resetMenu);
 
 // dynamic popup script
 
-let item1 = {};
-let item2 = {};
-let item3 = {};
-let item4 = {};
 
 //card template
-let item = {
-  id: '',
-  name: '',
-  spec: ['', '', ''],
-  description: '',
-  image: '',
-  technologies: ['', '', ''],
-  liveLink: '',
-  sourceLink: ''
-};
 
-popupArr = [{}, {}, {}, {}];
+let cardArr = [
+  {
+    'name': 'Tonic',
+    'spec': ['CANOPY', 'Back End Dev', '2015'],
+    'description': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    'image': 'Img'+'\\'+'SnapshootPortfolio3.png',
+    'technologies': ['html', 'css', 'javaScript'],
+    'liveLink': 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production/',
+    'sourceLink': 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production'
+  },
+  {
+    'name': 'Tonic',
+    'spec': ['CANOPY', 'Back End Dev', '2015'],
+    'description': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    'image': 'Img'+'\\'+'SnapshootPortfolio2.png',
+    'technologies': ['html', 'css', 'javaScript'],
+    'liveLink': 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production/',
+    'sourceLink': 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production'
+  },
+  {
+    'name': 'Tonic',
+    'spec': ['CANOPY', 'Back End Dev', '2015'],
+    'description': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    'image': 'Img'+'\\'+'SnapshootPortfolio3.png',
+    'technologies': ['html', 'css', 'javaScript'],
+    'liveLink': 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production/',
+    'sourceLink': 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production'
+  },
+  {
+    'name': 'Tonic',
+    'spec': ['CANOPY', 'Back End Dev', '2015'],
+    'description': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    'image': 'Img'+'\\'+'SnapshootPortfolio4.png',
+    'technologies': ['html', 'css', 'javaScript'],
+    'liveLink': 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production/',
+    'sourceLink': 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production'
+  }
+];
 
-let item0 = document.getElementById('item1');
-item2.id = item0.id;
-item2.name = item0.querySelector('h2').innerHTML;
-item2.spec = Array.from(item0.querySelectorAll('.spec>li'));
-item2.description = item0.querySelector('.description').textContent;
-item2.image = item0.querySelector('img').src;
-item2.technologies = Array.from(item0.querySelectorAll('.lng>li'));
-item2.liveLink = item0.querySelector('.liveLink').href;
-item2.sourceLink = item0.querySelector('.sourceLink').href;
-
-
-console.log(item.spec);
-
-//console.log(item.image);
-
-
-
-const wrapper = document.querySelector('.wrapper');
+const wrapper = document.querySelector('.grid-container');
 
 div = document.createElement('div');
 div.className = 'popup';
@@ -114,9 +121,8 @@ div.className = 'popupContent fontSmall';
 popup.appendChild(div);
 let popupContent = popup.querySelector('.popupContent');
 
-
 let h2 = document.createElement('h2');
-h2.textContent = item2.name;
+h2.textContent = cardArr[0].name;
 popupContent.appendChild(h2);
 
 ul = document.createElement('ul');
@@ -126,52 +132,57 @@ popupContent.appendChild(ul);
 
 li = document.createElement('li');
 li.className = 'specItem liststyle';
-li.textContent = item2.spec[0].textContent;
+li.textContent = cardArr[0].spec[0];
 ul.appendChild(li);
 
 li = document.createElement('li');
 li.className = 'specItem';
-li.textContent = item2.spec[1].textContent;
+li.textContent = cardArr[0].spec[1];
 ul.appendChild(li);
 
 li = document.createElement('li');
 li.className = 'specItem';
-li.textContent = item2.spec[2].textContent;
+li.textContent = cardArr[0].spec[2];
 ul.appendChild(li);
 
 img = document.createElement('img');
-img.src = item2.image;
+img.src = cardArr[0].image;
 img.className = 'snapshot';
 popupContent.appendChild(img);
 
+div = document.createElement('div');
+div.className = 'select';
+popupContent.appendChild(div);
+let desktopPopup = popupContent.querySelector('.select');
+
 let p = document.createElement('p');
-p.textContent = item2.description;
-popupContent.appendChild(p);
+p.textContent = cardArr[0].description;
+desktopPopup.appendChild(p);
 
 ul = document.createElement('ul');
 ul.className = 'lng liststyle';
 ul.style.marginBottom = '15px';
-popupContent.appendChild(ul);
+desktopPopup.appendChild(ul);
 
 li = document.createElement('li');
 li.className = 'tech';
-li.textContent = item2.technologies[0].textContent;
+li.textContent = cardArr[0].technologies[0];
 ul.appendChild(li);
 
 li = document.createElement('li');
 li.className = 'tech';
-li.textContent = item2.technologies[1].textContent;
+li.textContent = cardArr[0].technologies[1];
 ul.appendChild(li);
 
 li = document.createElement('li');
 li.className = 'tech';
-li.textContent = item2.technologies[2].textContent;
+li.textContent = cardArr[0].technologies[2];
 ul.appendChild(li);
 
 let form = document.createElement('form');
 form.className = 'buttonBar';
-popupContent.appendChild(form);
-let buttonBar = popupContent.querySelector('.buttonBar');
+desktopPopup.appendChild(form);
+let buttonBar = desktopPopup.querySelector('.buttonBar');
 
 let button = document.createElement('button');
 button.className = 'btn fontMid';
@@ -201,64 +212,28 @@ button.appendChild(img);
 
 function goToSource(url) {
   if (document.getElementById('live')) {
-      window.open(item2.liveLink);
+      window.open(cardArr[0].liveLink);
   }
   else if (document.getElementById('source')) {
-      window.open(item2.sourceLink);
+      window.open(cardArr[0].sourceLink);
   }
 }
-/*
-for (let i = 0; i < popupArr.length; i++) {
-  let obj = popupArr[i];
-  h2.textContent = obj.name;
-}
-*/
 
-/* textContent from cards by ID */
+//Card Button function
+
+if (window.innerWidth >= 768) {
+  popupContent.querySelector('.snapshot').classList.toggle('crop');
+  popupContent.querySelector('p').classList.toggle('popupParagraph');
+  popupContent.querySelector('.select').classList.toggle('desktopPopup');
+  desktopPopup.querySelector('.lng').classList.toggle('lngPopup');
+  desktopPopup.querySelector('.lngPopup').classList.remove('lng');
+}
+
 const details = wrapper.querySelector('.details');
 details.addEventListener('click', opened);
 
-/*let sourceItem = wrapper.querySelector('item')
-
-if (details) {
-
-}
-
-let itemName =
-*/
 function opened() {
   popup.style.display = 'block';
   popup.style.overflow ='scroll';
   popupContent.style.overflow ='hidden';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-function openDetails() {
-  details.parentElement.style.display = 'inline-block';
-  text.style.display = 'none';
-  popup.style.n-thchild()order = '1;'
-}
-
-let popup = document.querySelector('.popup');
-const details = popup.querySelector('button');
-let text = popup.querySelector('p');
-let spec = popup.querySelector('.spec');
-// const text = document.querySelectorAll('.popup-text');
-
-
-details.addEventListener('click', openDetails);
-*/

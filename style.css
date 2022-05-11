@@ -16,6 +16,100 @@ body {
   margin: 0;
 }
 
+/* popup style */
+
+.popup {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.popupContent {
+  display: flex;
+  align-self: center;
+  z-index: 3;
+  min-height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 20px 20px 60px 20px;
+  margin: 5vw;
+  border-radius: 10px;
+}
+
+.lngPopup {
+  display: flex;
+  margin-top: 15px;
+  align-items: flex-start;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.crop {
+  width: 100%;
+  aspect-ratio: 2.2 / 1;
+  object-fit: cover;
+}
+
+.desktopPopup {
+  display: inline-block;
+}
+
+.popupParagraph {
+  width: 60%;
+  float: left;
+}
+
+  .fontSmall {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .fontMid {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 0;
+  }
+
+
+.buttonBar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-top: solid lightgray 2px;
+  gap: 20px;
+}
+
+.buttonBar button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.description,
+.liveLink,
+.sourceLink {
+  max-height: 0;
+  visibility: hidden;
+}
+
+.popupImg {
+  padding-left: 5px;
+  align-self: center;
+  margin: 0;
+}
+
+/* End of popup style */
+
 label {
   color: #fff;
   padding-bottom: 10px;
@@ -809,11 +903,9 @@ textarea {
     background-position: right;
   }
 
-  /* popup style */
-
   .popup {
     display: none;
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
@@ -823,18 +915,7 @@ textarea {
   }
 
   .popupContent {
-    display: flex;
-    align-self: center;
-    z-index: 3;
-    width: 80vw;
-    min-height: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: #fff;
-    padding: 20px;
-    margin: 5%;
-    border-radius: 10px;
+    margin: 10vw;
   }
 
   .fontSmall {
@@ -861,7 +942,7 @@ textarea {
     align-items: center;
     align-self: stretch;
     border-top: solid lightgray 2px;
-    padding-top: 15px;
+    padding-top: 20px;
     margin: 0;
     gap: 20px;
   }
@@ -884,5 +965,8 @@ textarea {
     align-self: center;
     margin: 0;
   }
+
+  /* End of popup style */
+
 
 }
