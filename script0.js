@@ -82,9 +82,19 @@ let item = {
   liveLink: '',
   sourceLink: ''
 };
+var id = '';
 
-popupArr = [{}, {}, {}, {}];
+let popupArr = [{}, {}, {}, {}];
 
+let cardArr = Array.from(document.querySelectorAll('.card'));
+for (let i = 1; i < cardArr.length; i++) {
+  cardArr.id;
+}
+
+
+popupArr[i]
+
+/*
 let item0 = document.getElementById('item1');
 item2.id = item0.id;
 item2.name = item0.querySelector('h2').innerHTML;
@@ -94,7 +104,7 @@ item2.image = item0.querySelector('img').src;
 item2.technologies = Array.from(item0.querySelectorAll('.lng>li'));
 item2.liveLink = item0.querySelector('.liveLink').href;
 item2.sourceLink = item0.querySelector('.sourceLink').href;
-
+*/
 
 console.log(item.spec);
 

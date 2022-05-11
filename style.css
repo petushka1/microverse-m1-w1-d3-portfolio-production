@@ -272,7 +272,7 @@ h2 {
   padding: 0;
 }
 
-.spec li {
+.specItem {
   padding-right: 20px;
 }
 
@@ -293,7 +293,7 @@ h2 {
   align-items: center;
 }
 
-.lng li {
+.tech {
   align-self: center;
   margin: 0 20px 0 0;
   padding: 0 20px 0 20px;
@@ -808,4 +808,81 @@ textarea {
     background-size: contain;
     background-position: right;
   }
+
+  /* popup style */
+
+  .popup {
+    display: none;
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    left: 0;
+    top: 0;
+  }
+
+  .popupContent {
+    display: flex;
+    align-self: center;
+    z-index: 3;
+    width: 80vw;
+    min-height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    margin: 5%;
+    border-radius: 10px;
+  }
+
+  .fontSmall {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .fontMid {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 0;
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .buttonBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-top: solid lightgray 2px;
+    padding-top: 15px;
+    margin: 0;
+    gap: 20px;
+  }
+
+  .buttonBar button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description,
+  .liveLink,
+  .sourceLink {
+    max-height: 0;
+    visibility: hidden;
+  }
+
+  .popupImg {
+    padding-left: 5px;
+    align-self: center;
+    margin: 0;
+  }
+
 }
