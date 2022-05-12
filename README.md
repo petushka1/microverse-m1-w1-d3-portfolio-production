@@ -46,6 +46,28 @@ git add .
 git commit -m "Commit description"
 git push origin <your-branch>
 ```
+
+Use Project Section to customize your own dynamic list of cards.
+- card is automatically generated and appended to document. To generate a new card you need to add a new Object to Array of Cards.
+
+*Example:*
+
+```
+{
+  'id': '0',
+  'name': 'Tonic',
+  'spec': ['CANOPY', 'Back End Dev', '2015'],
+  'brief': 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  'description': 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+  'image': 'Img'+'\\'+'SnapshootPortfolio3.png',
+  'alt': 'project 1',
+  'technologies': ['html', 'css', 'javaScript'],
+  'liveLink': 'https://username.github.io/',
+  'sourceLink': 'https://github.com/username'
+},
+```
+- You will not be required for any extra manipulations to set up cards popups. Popup is generated and receives all data from the card sender.
+
 Open pull request
 
 Check Linters:

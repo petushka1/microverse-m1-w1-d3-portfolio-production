@@ -70,8 +70,10 @@ window.addEventListener('resize', resetMenu);
 
 //card template
 
+
 let cardArr = [
   {
+    'id': '0',
     'name': 'Tonic',
     'spec': ['CANOPY', 'Back End Dev', '2015'],
     'brief': 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -83,6 +85,7 @@ let cardArr = [
     'sourceLink': 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production'
   },
   {
+    'id': '1',
     'name': 'Tonic',
     'spec': ['CANOPY', 'Back End Dev', '2015'],
     'brief': 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -94,6 +97,7 @@ let cardArr = [
     'sourceLink': 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production'
   },
   {
+    'id': '2',
     'name': 'Tonic',
     'spec': ['CANOPY', 'Back End Dev', '2015'],
     'brief': 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -105,6 +109,7 @@ let cardArr = [
     'sourceLink': 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production'
   },
   {
+    'id': '3',
     'name': 'Tonic',
     'spec': ['CANOPY', 'Back End Dev', '2015'],
     'brief': 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -116,6 +121,7 @@ let cardArr = [
     'sourceLink': 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production'
   },
   {
+    'id': '4',
     'name': 'Tonic',
     'spec': ['CANOPY', 'Back End Dev', '2015'],
     'brief': 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -131,116 +137,14 @@ let cardArr = [
 
 const wrapper = document.querySelector('.wrapper');
 
-div = document.createElement('div');
-div.className = 'popup';
-wrapper.appendChild(div);
-let popup = document.querySelector('.popup');
-
-div = document.createElement('div');
-div.className = 'popupContent fontSmall';
-popup.appendChild(div);
-let popupContent = popup.querySelector('.popupContent');
-
-let h2 = document.createElement('h2');
-h2.textContent = cardArr[0].name;
-popupContent.appendChild(h2);
-
-ul = document.createElement('ul');
-ul.className = 'spec';
-//ul.style.paddingBottom = '15px';
-popupContent.appendChild(ul);
-
-li = document.createElement('li');
-li.className = 'specItem liststyle';
-li.textContent = cardArr[0].spec[0];
-ul.appendChild(li);
-
-li = document.createElement('li');
-li.className = 'specItem';
-li.textContent = cardArr[0].spec[1];
-ul.appendChild(li);
-
-li = document.createElement('li');
-li.className = 'specItem';
-li.textContent = cardArr[0].spec[2];
-ul.appendChild(li);
-
-img = document.createElement('img');
-img.src = cardArr[0].image;
-img.className = 'snapshot';
-popupContent.appendChild(img);
-
-div = document.createElement('div');
-div.className = 'select';
-popupContent.appendChild(div);
-let desktopPopup = popupContent.querySelector('.select');
-
-let p = document.createElement('p');
-p.textContent = cardArr[0].description;
-desktopPopup.appendChild(p);
-
-ul = document.createElement('ul');
-ul.className = 'lng liststyle';
-ul.style.marginBottom = '15px';
-desktopPopup.appendChild(ul);
-
-li = document.createElement('li');
-li.className = 'tech';
-li.textContent = cardArr[0].technologies[0];
-ul.appendChild(li);
-
-li = document.createElement('li');
-li.className = 'tech';
-li.textContent = cardArr[0].technologies[1];
-ul.appendChild(li);
-
-li = document.createElement('li');
-li.className = 'tech';
-li.textContent = cardArr[0].technologies[2];
-ul.appendChild(li);
-
-let form = document.createElement('form');
-form.className = 'buttonBar';
-desktopPopup.appendChild(form);
-let buttonBar = desktopPopup.querySelector('.buttonBar');
-
-let button = document.createElement('button');
-button.className = 'btn fonSmall';
-button.textContent = 'Live vesrion live';
-buttonBar.appendChild(button);
-button.addEventListener('click', goToSource);
-
-img = document.createElement('img');
-img.src = 'img/live.svg';
-img.className = 'popupImg';
-button.appendChild(img);
-
-button = document.createElement('button');
-button.className = 'btn fontSmall source';
-button.textContent = 'See source';
-buttonBar.appendChild(button);
-button.addEventListener('click', goToSource);
-
-img = document.createElement('img');
-img.src = 'img/gthb.svg';
-img.className = 'popupImg';
-button.appendChild(img);
-
-
-
-
-
 // card tempate
-
 
 div = document.createElement('div');
 div.className = 'gridContainer';
 wrapper.appendChild(div);
 const gridContainer = document.querySelector('.gridContainer');
 
-
 cardArr.forEach((item, i) => {
-
 let card = document.createElement('div');
 card.className = 'card round';
 gridContainer.appendChild(card);
@@ -295,37 +199,134 @@ details.className = 'btn details';
 details.textContent = 'See project';
 details.name = 'details';
 details.type = 'button';
+details.id = cardArr[i].id;
 cardContent.appendChild(details);
 details.addEventListener('click', opened);
 });
 
-
-
 // Open links when popup buttons clicked
 
 function goToSource(url) {
-  if (document.getElementById('live')) {
+  if (live) {
       window.open(cardArr[0].liveLink);
   }
-  else if (document.getElementById('source')) {
+  else if (source) {
       window.open(cardArr[0].sourceLink);
   }
 }
 
+
+
 //Card Button function
 
-if (window.innerWidth >= 768) {
-  popupContent.querySelector('.snapshot').classList.toggle('crop');
-  popupContent.querySelector('p').classList.toggle('popupParagraph');
-  popupContent.querySelector('.select').classList.toggle('desktopPopup');
-  desktopPopup.querySelector('.lng').classList.toggle('lngPopup');
-  desktopPopup.querySelector('.lngPopup').classList.remove('lng');
-}
 
 
+function opened(e) {
+  let j = e.target.id;
+  let popup = document.createElement('div');
+  popup.className = 'popup';
+  wrapper.appendChild(popup);
+  
+  function closePopup() {
+      let targetPopap = document.querySelector('.popup');
+      popup.style.display = 'none';
+  }
 
-function opened() {
-  popup.style.display = 'block';
+  let popupContent = document.createElement('div');
+  popupContent.className = 'popupContent fontSmall';
+  popup.appendChild(popupContent);
+
+  img = document.createElement('img');
+  img.src = './img/closeDark.svg';
+  img.className = 'close';
+  popupContent.appendChild(img);
+  img.addEventListener('click', closePopup);
+
+  let popupHeader = document.createElement('h2');
+  popupHeader.textContent = cardArr[j].name;
+  popupContent.appendChild(popupHeader);
+
+  ul = document.createElement('ul');
+  ul.className = 'spec';
+  popupContent.appendChild(ul);
+  li = document.createElement('li');
+  li.className = 'specItem liststyle';
+  li.textContent = cardArr[j].spec[0];
+  ul.appendChild(li);
+  li = document.createElement('li');
+  li.className = 'specItem';
+  li.textContent = cardArr[j].spec[1];
+  ul.appendChild(li);
+  li = document.createElement('li');
+  li.className = 'specItem';
+  li.textContent = cardArr[j].spec[2];
+  ul.appendChild(li);
+  let popupSnapshot = document.createElement('img');
+  popupSnapshot.src = cardArr[j].image;
+  popupSnapshot.className = 'crop';
+  popupContent.appendChild(popupSnapshot);
+  let desktopPopup = document.createElement('div');
+  desktopPopup.className = 'select';
+  popupContent.appendChild(desktopPopup);
+  let popupParagraph = document.createElement('p');
+  popupParagraph.className = 'popupParagraph';
+  popupParagraph.textContent = cardArr[j].description;
+  desktopPopup.appendChild(popupParagraph);
+  let desktopRight = document.createElement('div');
+  desktopRight.className = 'desktopRight';
+  desktopPopup.appendChild(desktopRight);
+  ul = document.createElement('ul');
+  ul.className = 'lng liststyle';
+  ul.style.marginBottom = '15px';
+  desktopRight.appendChild(ul);
+  li = document.createElement('li');
+  li.className = 'tech';
+  li.textContent = cardArr[j].technologies[0];
+  ul.appendChild(li);
+  li = document.createElement('li');
+  li.className = 'tech';
+  li.textContent = cardArr[j].technologies[1];
+  ul.appendChild(li);
+  li = document.createElement('li');
+  li.className = 'tech';
+  li.textContent = cardArr[j].technologies[2];
+  ul.appendChild(li);
+  let buttonBar = document.createElement('form');
+  buttonBar.className = 'buttonBar';
+  desktopRight.appendChild(buttonBar);
+  let live = document.createElement('button');
+  live.className = 'btn fontSmall live';
+  live.textContent = 'Live vesrion';
+  buttonBar.appendChild(live);
+  live.addEventListener('click', goToSource);
+  img = document.createElement('img');
+  img.src = 'img/live.svg';
+  img.className = 'popupImg';
+  live.appendChild(img);
+  let source = document.createElement('button');
+  source.className = 'btn fontSmall source';
+  source.textContent = 'See source';
+  buttonBar.appendChild(source);
+  source.addEventListener('click', goToSource);
+  img = document.createElement('img');
+  img.src = 'img/gthb.svg';
+  img.className = 'popupImg';
+  source.appendChild(img);
+  if (window.innerWidth < 768) {
+    popupSnapshot.classList.toggle('snapshot');
+    popupSnapshot.classList.remove('crop');
+    popupParagraph.classList.remove('popupParagraph');
+    popupParagraph.classList.remove('desktopRight');
+  }
+  popup.style.display = 'flex';
   popup.style.overflow ='scroll';
   popupContent.style.overflow ='hidden';
+}
+
+if (window.innerWidth >= 768) {
+  popupContent.classList.toggle('crop');
+  popupParagraph.classList.toggle('popupParagraph');
+  popupContent.classList.toggle('desktopPopup');
+  desktopPopup.querySelector('.lng').classList.toggle('lngPopup');
+
 }
