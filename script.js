@@ -201,7 +201,7 @@ details.name = 'details';
 details.type = 'button';
 details.id = cardArr[i].id;
 cardContent.appendChild(details);
-details.addEventListener('click', opened);
+details.addEventListener('click', openPopup);
 });
 
 // Open links when popup buttons clicked
@@ -221,12 +221,12 @@ function goToSource(url) {
 
 
 
-function opened(e) {
+function openPopup(e) {
   let j = e.target.id;
   let popup = document.createElement('div');
   popup.className = 'popup';
   wrapper.appendChild(popup);
-  
+
   function closePopup() {
       let targetPopap = document.querySelector('.popup');
       popup.style.display = 'none';
@@ -319,8 +319,7 @@ function opened(e) {
     popupParagraph.classList.remove('desktopRight');
   }
   popup.style.display = 'flex';
-  popup.style.overflow ='scroll';
-  popupContent.style.overflow ='hidden';
+  popup.style.overflow ='auto';
 }
 
 if (window.innerWidth >= 768) {

@@ -62,8 +62,6 @@ body {
   object-fit: cover;
 }
 
-
-
 .popupParagraph {
   max-width: 60%;
   float: left;
@@ -76,17 +74,17 @@ body {
   padding: 0;
 }
 
-  .fontSmall {
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-  }
+.fontSmall {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
 
-  .fontMid {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 0;
-  }
+.fontMid {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 0;
+}
 
 .buttonBar {
   display: flex;
@@ -107,7 +105,6 @@ body {
 }
 
 /* End of popup style */
-
 label {
   color: #fff;
   padding-bottom: 10px;
@@ -299,7 +296,6 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-/* margin: 142px 9.86% 0 9.86%; */
 }
 
 .gridContainer {
@@ -316,7 +312,6 @@ h2 {
    align-items: flex-start;
    background-color: #fff;
    padding: 10px;
-
  }
 
 .cardContent {
@@ -330,12 +325,10 @@ h2 {
   flex-direction: row-reverse;
 }
 
-
 .card button {
   align-self: flex-start;
   margin: 0;
 }
-
 
 .spec {
   display: flex;
@@ -756,6 +749,7 @@ textarea {
     width: 100%;
     padding: 20px 0 40px 0;
   }
+
   .card img {
     max-width: 544px;
     width: 100%;
@@ -925,10 +919,4 @@ textarea {
     max-width: 100%;
     height: auto;
   }
-
-
-
-  /* End of popup style */
-
-
 }
