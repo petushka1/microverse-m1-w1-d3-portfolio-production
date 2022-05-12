@@ -305,14 +305,14 @@ h2 {
   margin: 10% 5% 0 5%;
 }
 
- .card {
-   display: flex;
-   justify-content: center;
-   align-self: stretch;
-   align-items: flex-start;
-   background-color: #fff;
-   padding: 10px;
- }
+.card {
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 10px;
+}
 
 .cardContent {
   display: flex;
