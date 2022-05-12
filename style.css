@@ -292,7 +292,7 @@ h2 {
 }
 
 .snapshot {
-  width: 100%;
+  max-width: 45%;
   height: auto;
 }
 
@@ -301,62 +301,43 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 142px 9.86% 0 9.86%;
+/* margin: 142px 9.86% 0 9.86%; */
 }
 
-.grid-container {
+.gridContainer {
   display: grid;
   grid-template-columns: auto;
   grid-row-gap: 142px;
+  margin: 10% 5% 0 5%;
 }
 
-.item1 {
-  grid-area: 1 / 1 / 2 / 2;
-}
+ .card {
+   display: flex;
+   justify-content: center;
+   align-self: stretch;
+   align-items: flex-start;
+   background-color: #fff;
+   padding: 10px;
 
-.item {
-  background-color: #fff;
+ }
+
+.cardContent {
   display: flex;
-  justify-content: center;
-  padding: 24px;
-}
-
-.item-flex {
-  display: flex;
+  margin-left: 2%;
   flex-direction: column;
   justify-content: flex-start;
-  width: 55%;
-  padding-left: 3%;
 }
 
 .reverse {
   flex-direction: row-reverse;
 }
 
-.item-flex button {
+
+.card button {
   align-self: flex-start;
   margin: 0;
 }
 
-.item2 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-.item3 {
-  grid-area: 3 / 1 / 4 / 2;
-}
-
-.item4 {
-  grid-area: 4 / 1 / 5 / 2;
-}
-
-.item5 {
-  grid-area: 5 / 1 / 6 / 2;
-}
-
-.item6 {
-  grid-area: 5 / 1 / 6 / 2;
-}
 
 .spec {
   display: flex;
@@ -454,7 +435,7 @@ h2 {
   margin-top: 142px;
 }
 
-.about .grid-container {
+.about .gridContainer {
   padding: 0 9.86%;
 }
 
@@ -752,14 +733,14 @@ textarea {
     width: 100%;
   }
 
-  .grid-container {
+  .gridContainer {
     display: grid;
     min-width: 327px;
-    grid-template-columns: auto;
+    grid-auto-rows: 1fr;
     margin: 15% 5%;
   }
 
-  .item {
+  .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -767,7 +748,7 @@ textarea {
     background-color: #fff;
   }
 
-  .item-flex {
+  .cardContent {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -775,37 +756,10 @@ textarea {
     width: 100%;
     padding: 20px 0 40px 0;
   }
-
-  .item1 img {
+  .card img {
     max-width: 544px;
     width: 100%;
     height: auto;
-  }
-
-  .item1 {
-    grid-area: 1 / 1 / 2 / 2;
-  }
-
-  .item2 {
-    grid-area: 2 / 1 / 3 / 2;
-  }
-
-  .item3 {
-    grid-area: 3 / 1 / 4 / 2;
-  }
-
-  .item4 {
-    grid-area: 4 / 1 / 5 / 2;
-  }
-
-  .item5 {
-    grid-area: 5 / 1 / 6 / 2;
-  }
-
-  .item6 {
-    grid-area: 6 / 1 / 7 / 2;
-    align-self: start;
-    margin: 0;
   }
 
   /* About myself section */
@@ -951,13 +905,6 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .description,
-  .liveLink,
-  .sourceLink {
-    max-height: 0;
-    visibility: hidden;
   }
 
   .popupImg {
