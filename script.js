@@ -301,13 +301,12 @@ cardArr.forEach((item, i) => {
   cardContent.appendChild(details);
   details.addEventListener('click', openPopup);
 
-  function goToSource(g) {
-    if (g.target.className === 'live') {
-      window.open(cardArr[0].liveLink);
-    } else if (g.target.className === 'source') {
-      window.open(cardArr[0].sourceLink);
-    }
+  function goToLive() {
+    window.open(cardArr[0].liveLink);
   }
-  live.addEventListener('click', goToSource);
+  function goToSource() {
+    window.open(cardArr[0].sourceLink);
+  }
+  live.addEventListener('click', goToLive);
   source.addEventListener('click', goToSource);
 });
