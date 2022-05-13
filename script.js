@@ -271,7 +271,8 @@ cardArr.forEach((item, i) => {
     buttonBar.className = 'buttonBar';
     desktopRight.appendChild(buttonBar);
     const live = document.createElement('button');
-    live.className = 'btn fontSmall live';
+    live.className = 'btn fontSmall';
+    live.id = 'live';
     live.textContent = 'Live vesrion';
     buttonBar.appendChild(live);
 
@@ -280,7 +281,8 @@ cardArr.forEach((item, i) => {
     img.className = 'popupImg';
     live.appendChild(img);
     const source = document.createElement('button');
-    source.className = 'btn fontSmall source';
+    source.className = 'btn fontSmall';
+    source.id = 'source';
     source.textContent = 'See source';
     buttonBar.appendChild(source);
 
