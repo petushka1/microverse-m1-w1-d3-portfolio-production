@@ -202,18 +202,9 @@ cardArr.forEach((item, i) => {
     popup.className = 'popup';
     wrapper.appendChild(popup);
 
-    function closePopup() {
-      popup.style.display = 'none';
-    }
-
-    function goToSource(url) {
-      if (live) {
-          window.open(cardArr[0].liveLink);
-      }
-      else if (source) {
-          window.open(cardArr[0].sourceLink);
-      }
-    }
+  function closePopup() {
+    popup.style.display = 'none';
+  }
 
     const  popupContent = document.createElement('div');
     popupContent.className = 'popupContent fontSmall';
@@ -303,7 +294,7 @@ cardArr.forEach((item, i) => {
       popupParagraph.classList.remove('desktopRight');
     }
     popup.style.display = 'block';
-    popup.style.overflow = 'auto';
+    popup.style.overflow ='auto';
   }
 
   cardContent.appendChild(details);
@@ -311,6 +302,14 @@ cardArr.forEach((item, i) => {
 });
 
 // Open links when popup buttons clicked
+function goToSource(url) {
+  if (live) {
+      window.open(cardArr[0].liveLink);
+  }
+  else if (source) {
+      window.open(cardArr[0].sourceLink);
+  }
+}
 
 if (window.innerWidth >= 768) {
   popupContent.classList.toggle('crop');
