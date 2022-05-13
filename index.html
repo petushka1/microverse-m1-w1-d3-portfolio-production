@@ -120,7 +120,7 @@
             If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it
           </p>
         </div>
-          <form class="contact" action="https://formspree.io/f/xzbokeqo" method="post">
+          <form id= 'contactForm' class="contact" action="https://formspree.io/f/xzbokeqo" method="post">
             <ul>
               <li class="contact-li">
                 <label for="username">Your Name</label>
@@ -133,22 +133,17 @@
               <li class="contact-li">
                 <label for="msg">Write Your Massege here</label>
                 <textarea id="msg" required maxlength="500" name="msg" rows="8" cols="20" placeholder="your message"></textarea>
+                <small id="error"></small>
               </li>
               <li class="contact-li">
                 <button class="btn contact-btn" type="submit" name="btn">Get in touch</button>
               </li>
             </ul>
-
           </form>
   </div>
   </div>
         </section>
-
-
-
-
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

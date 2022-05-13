@@ -211,7 +211,7 @@ cardArr.forEach((item, i) => {
     popup.appendChild(popupContent);
 
     img = document.createElement('img');
-    img.src = 'img/closeDark.svg';
+    img.src = 'Img/closeDark.svg';
     img.className = 'close';
     popupContent.appendChild(img);
     img.addEventListener('click', closePopup);
@@ -310,4 +310,28 @@ cardArr.forEach((item, i) => {
 
   cardContent.appendChild(details);
   details.addEventListener('click', openPopup);
+});
+
+// Contact form validation
+const contactForm = document.querySelector('#contactForm');
+const email = contactForm.elements.mail;
+const validationMassege = contactForm.querySelector('#error');
+validationMassege.style.color = '#fff';
+validationMassege.style.backgroundImage = 'linear-gradient(90deg, rgba(252,108,172,1) 50%, rgba(207,66,255,1) 100%)';
+validationMassege.style.fontSize = '14px';
+validationMassege.style.padding = '0 0 0 4px';
+validationMassege.style.borderRadius = '2px';
+
+contactForm.addEventListener('submit', (event) => {
+  let isValid = false;
+  if (email.value === email.value.toLowerCase()) {
+    isValid = true;
+  }
+  if (isValid === false) {
+    event.preventDefault();
+    validationMassege.innerText = 'Only Lower Case Symbols Allowed';
+    setTimeout(() => {
+      validationMassege.textContent = '';
+    }, 2000);
+  }
 });
