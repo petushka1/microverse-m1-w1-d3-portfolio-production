@@ -350,7 +350,7 @@ function receiveData() {
 
 contactForm.addEventListener('change', receiveData);
 
-const storageInfo = JSON.parse(localStorage.getItem('storage'));
+const storageInfo = JSON.parse(localStorage.getItem('storedData'));
 document.getElementById('msg').value = storageInfo.textMsg;
 document.getElementById('username').value = storageInfo.name;
 document.getElementById('mail').value = storageInfo.email;
