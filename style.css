@@ -16,6 +16,101 @@ body {
   margin: 0;
 }
 
+/* popup style */
+
+.close {
+  align-self: flex-end;
+  padding: 5px;
+}
+
+.popup {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.popupContent {
+  display: flex;
+  align-self: center;
+  z-index: 3;
+  min-height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 10px 10px 30px 10px;
+  margin: auto 10vw;
+  border-radius: 10px;
+}
+
+.select {
+  display: inline-block;
+  flex-direction: unset;
+}
+
+.lngPopup {
+  display: flex;
+  margin-top: 15px;
+  align-items: flex-start;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.crop {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+}
+
+.popupParagraph {
+  max-width: 65%;
+  float: left;
+}
+
+.desktopRight {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.fontSmall {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.fontMid {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 0;
+}
+
+.buttonBar {
+  display: flex;
+  border-top: solid lightgray 2px;
+  gap: 2%;
+}
+
+.buttonBar button {
+  display: flex;
+  margin-top: 8px;
+}
+
+.popupImg {
+  padding-left: 5px;
+  width: 1em;
+  align-self: center;
+  margin: 0;
+}
+
+/* End of popup style */
 label {
   color: #fff;
   padding-bottom: 10px;
@@ -197,8 +292,8 @@ h2 {
   border-radius: 20px;
 }
 
-.snapshot {
-  width: 100%;
+.cardSnapshot {
+  max-width: 45%;
   height: auto;
 }
 
@@ -207,61 +302,38 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 142px 9.86% 0 9.86%;
 }
 
-.grid-container {
+.gridContainer {
   display: grid;
   grid-template-columns: auto;
   grid-row-gap: 142px;
+  margin: 10% 5% 0 5%;
 }
 
-.item1 {
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-.item {
-  background-color: #fff;
+.card {
   display: flex;
   justify-content: center;
-  padding: 24px;
+  align-self: stretch;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 10px;
 }
 
-.item-flex {
+.cardContent {
   display: flex;
+  margin-left: 2%;
   flex-direction: column;
   justify-content: flex-start;
-  width: 55%;
-  padding-left: 3%;
 }
 
 .reverse {
   flex-direction: row-reverse;
 }
 
-.item-flex button {
+.card button {
   align-self: flex-start;
   margin: 0;
-}
-
-.item2 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-.item3 {
-  grid-area: 3 / 1 / 4 / 2;
-}
-
-.item4 {
-  grid-area: 4 / 1 / 5 / 2;
-}
-
-.item5 {
-  grid-area: 5 / 1 / 6 / 2;
-}
-
-.item6 {
-  grid-area: 5 / 1 / 6 / 2;
 }
 
 .spec {
@@ -272,7 +344,7 @@ h2 {
   padding: 0;
 }
 
-.spec li {
+.specItem {
   padding-right: 20px;
 }
 
@@ -282,9 +354,10 @@ h2 {
 }
 
 .lng {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
-  margin: 0 0 40px 0;
+  margin: 0 0 2% 0;
 }
 
 .justify {
@@ -293,10 +366,10 @@ h2 {
   align-items: center;
 }
 
-.lng li {
+.tech {
   align-self: center;
-  margin: 0 20px 0 0;
-  padding: 0 20px 0 20px;
+  margin: 1%;
+  padding: 0 10px 0 10px;
   border-radius: 6px;
   background-color: #ebebff;
   transition-property: all;
@@ -360,7 +433,7 @@ h2 {
   margin-top: 142px;
 }
 
-.about .grid-container {
+.about .gridContainer {
   padding: 0 9.86%;
 }
 
@@ -652,20 +725,21 @@ textarea {
   /* Project section */
   .wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     align-content: center;
     width: 100%;
   }
 
-  .grid-container {
+  .gridContainer {
     display: grid;
     min-width: 327px;
-    grid-template-columns: auto;
-    margin: 15% 5%;
+    grid-auto-rows: 1fr;
+    margin-top: 142px;
+    grid-row-gap: 100px;
   }
 
-  .item {
+  .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -673,7 +747,7 @@ textarea {
     background-color: #fff;
   }
 
-  .item-flex {
+  .cardContent {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -682,36 +756,10 @@ textarea {
     padding: 20px 0 40px 0;
   }
 
-  .item1 img {
+  .card img {
     max-width: 544px;
     width: 100%;
     height: auto;
-  }
-
-  .item1 {
-    grid-area: 1 / 1 / 2 / 2;
-  }
-
-  .item2 {
-    grid-area: 2 / 1 / 3 / 2;
-  }
-
-  .item3 {
-    grid-area: 3 / 1 / 4 / 2;
-  }
-
-  .item4 {
-    grid-area: 4 / 1 / 5 / 2;
-  }
-
-  .item5 {
-    grid-area: 5 / 1 / 6 / 2;
-  }
-
-  .item6 {
-    grid-area: 6 / 1 / 7 / 2;
-    align-self: start;
-    margin: 0;
   }
 
   /* About myself section */
@@ -807,5 +855,87 @@ textarea {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
+  }
+
+  .popup {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    left: 0;
+    top: 0;
+  }
+
+  .popupContent {
+    display: flex;
+    align-self: center;
+    z-index: 3;
+    min-height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 10px 10px 30px 10px;
+    margin: 5vw;
+    border-radius: 10px;
+  }
+
+  .fontSmall {
+    font-weight: 600;
+    font-size: 0.9em;
+    line-height: 1.1em;
+  }
+
+  .fontMid {
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .buttonBar {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    border-top: solid lightgray 2px;
+    margin: 0;
+    gap: 20px;
+  }
+
+  .buttonBar button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popupImg {
+    padding-left: 5px;
+    align-self: center;
+    margin: 0;
+  }
+
+  .crop {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .select {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popupParagraph {
+    max-width: 100%;
+    float: none;
   }
 }
