@@ -293,7 +293,7 @@ cardArr.forEach((item, i) => {
       popupParagraph.classList.remove('popupParagraph');
       popupParagraph.classList.remove('desktopRight');
     }
-    popup.style.display = 'flex';
+    popup.style.display = 'block';
     popup.style.overflow ='auto';
   }
 
