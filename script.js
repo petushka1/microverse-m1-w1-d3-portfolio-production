@@ -72,60 +72,60 @@ const cardArr = [
     name: 'Tonic',
     spec: ['CANOPY', 'Back End Dev', '2015'],
     brief: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: 'Img/SnapshootPortfolio3.png',
     alt: 'project 1',
     technologies: ['html', 'css', 'javaScript'],
     liveLink: 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production/',
-    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production'
+    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production',
   },
   {
     id: '1',
     name: 'Tonic',
     spec: ['CANOPY', 'Back End Dev', '2015'],
     brief: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: 'Img/SnapshootPortfolio2.png',
     alt: 'project 1',
     technologies: ['html', 'css', 'javaScript'],
     liveLink: 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production/',
-    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production'
+    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production',
   },
   {
     id: '2',
     name: 'Tonic',
     spec: ['CANOPY', 'Back End Dev', '2015'],
     brief: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: 'Img/SnapshootPortfolio3.png',
     alt: 'project 1',
     technologies: ['html', 'css', 'javaScript'],
     liveLink: 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production/',
-    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production'
+    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production',
   },
   {
     id: '3',
     name: 'Tonic',
     spec: ['CANOPY', 'Back End Dev', '2015'],
     brief: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: 'Img/SnapshootPortfolio.png',
     alt: 'project 1',
     technologies: ['html', 'css', 'javaScript'],
     liveLink: 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production/',
-    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production'
+    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production',
   },
   {
     id: '4',
     name: 'Tonic',
     spec: ['CANOPY', 'Back End Dev', '2015'],
     brief: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: 'Img/SnapshootPortfolio.png',
     alt: 'project 1',
     technologies: ['html', 'css', 'javaScript'],
     liveLink: 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production',
-    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production'
+    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production',
   }
 ];
 
@@ -160,12 +160,12 @@ cardArr.forEach((item, i) => {
   speclist.className = 'spec';
   cardContent.appendChild(speclist);
   const specArr = cardArr[i].spec;
-  for (let j = 0; j < specArr.length; j++) {
+  for (let j = 0; j < specArr.length; j += 1) {
     li = document.createElement('li');
     li.className = 'specItem';
     li.textContent = specArr[j];
     speclist.appendChild(li);
-}
+  }
 
   const paragraph = document.createElement('p');
   paragraph.textContent = cardArr[i].brief;
@@ -195,19 +195,27 @@ cardArr.forEach((item, i) => {
   details.type = 'button';
   details.id = cardArr[i].id;
 
-  //Card Button function
+  // Card Button function
   function openPopup(e) {
-    let j = e.target.id;
-    let popup = document.createElement('div');
+    const j = e.target.id;
+    const popup = document.createElement('div');
     popup.className = 'popup';
     wrapper.appendChild(popup);
 
     function closePopup() {
-        let targetPopap = document.querySelector('.popup');
-        popup.style.display = 'none';
+      popup.style.display = 'none';
     }
 
-    let popupContent = document.createElement('div');
+    function goToSource(url) {
+      if (live) {
+          window.open(cardArr[0].liveLink);
+      }
+      else if (source) {
+          window.open(cardArr[0].sourceLink);
+      }
+    }
+
+    const  popupContent = document.createElement('div');
     popupContent.className = 'popupContent fontSmall';
     popup.appendChild(popupContent);
 
@@ -217,7 +225,7 @@ cardArr.forEach((item, i) => {
     popupContent.appendChild(img);
     img.addEventListener('click', closePopup);
 
-    let popupHeader = document.createElement('h2');
+    const popupHeader = document.createElement('h2');
     popupHeader.textContent = cardArr[j].name;
     popupContent.appendChild(popupHeader);
 
@@ -236,40 +244,41 @@ cardArr.forEach((item, i) => {
     li.className = 'specItem';
     li.textContent = cardArr[j].spec[2];
     ul.appendChild(li);
-    let popupSnapshot = document.createElement('img');
+    const popupSnapshot = document.createElement('img');
     popupSnapshot.src = cardArr[j].image;
     popupSnapshot.className = 'crop';
     popupContent.appendChild(popupSnapshot);
-    let desktopPopup = document.createElement('div');
+    const desktopPopup = document.createElement('div');
     desktopPopup.className = 'select';
     popupContent.appendChild(desktopPopup);
-    let popupParagraph = document.createElement('p');
+    const popupParagraph = document.createElement('p');
     popupParagraph.className = 'popupParagraph';
     popupParagraph.textContent = cardArr[j].description;
     desktopPopup.appendChild(popupParagraph);
-    let desktopRight = document.createElement('div');
+    const desktopRight = document.createElement('div');
     desktopRight.className = 'desktopRight';
     desktopPopup.appendChild(desktopRight);
     ul = document.createElement('ul');
     ul.className = 'lng liststyle';
     ul.style.marginBottom = '15px';
     desktopRight.appendChild(ul);
+    [first, second, third] = cardArr[j].technologies;
     li = document.createElement('li');
     li.className = 'tech';
-    li.textContent = cardArr[j].technologies[0];
+    li.textContent = first;
     ul.appendChild(li);
     li = document.createElement('li');
     li.className = 'tech';
-    li.textContent = cardArr[j].technologies[1];
+    li.textContent = second;
     ul.appendChild(li);
     li = document.createElement('li');
     li.className = 'tech';
-    li.textContent = cardArr[j].technologies[2];
+    li.textContent = third;
     ul.appendChild(li);
-    let buttonBar = document.createElement('form');
+    const buttonBar = document.createElement('form');
     buttonBar.className = 'buttonBar';
     desktopRight.appendChild(buttonBar);
-    let live = document.createElement('button');
+    const live = document.createElement('button');
     live.className = 'btn fontSmall live';
     live.textContent = 'Live vesrion';
     buttonBar.appendChild(live);
@@ -278,7 +287,7 @@ cardArr.forEach((item, i) => {
     img.src = 'img/live.svg';
     img.className = 'popupImg';
     live.appendChild(img);
-    let source = document.createElement('button');
+    const source = document.createElement('button');
     source.className = 'btn fontSmall source';
     source.textContent = 'See source';
     buttonBar.appendChild(source);
@@ -294,7 +303,7 @@ cardArr.forEach((item, i) => {
       popupParagraph.classList.remove('desktopRight');
     }
     popup.style.display = 'block';
-    popup.style.overflow ='auto';
+    popup.style.overflow = 'auto';
   }
 
   cardContent.appendChild(details);
@@ -302,14 +311,6 @@ cardArr.forEach((item, i) => {
 });
 
 // Open links when popup buttons clicked
-function goToSource(url) {
-  if (live) {
-      window.open(cardArr[0].liveLink);
-  }
-  else if (source) {
-      window.open(cardArr[0].sourceLink);
-  }
-}
 
 if (window.innerWidth >= 768) {
   popupContent.classList.toggle('crop');
