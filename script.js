@@ -126,7 +126,7 @@ const cardArr = [
     technologies: ['html', 'css', 'javaScript'],
     liveLink: 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production',
     sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production',
-  }
+  },
 ];
 
 const wrapper = document.querySelector('.wrapper');
@@ -202,11 +202,11 @@ cardArr.forEach((item, i) => {
     popup.className = 'popup';
     wrapper.appendChild(popup);
 
-  function closePopup() {
-    popup.style.display = 'none';
-  }
+    function closePopup() {
+      popup.style.display = 'none';
+    }
 
-    const  popupContent = document.createElement('div');
+    const popupContent = document.createElement('div');
     popupContent.className = 'popupContent fontSmall';
     popup.appendChild(popupContent);
 
@@ -223,17 +223,18 @@ cardArr.forEach((item, i) => {
     ul = document.createElement('ul');
     ul.className = 'spec';
     popupContent.appendChild(ul);
+    [first, second, third] = cardArr[i].spec;
     li = document.createElement('li');
     li.className = 'specItem liststyle';
-    li.textContent = cardArr[j].spec[0];
+    li.textContent = first;
     ul.appendChild(li);
     li = document.createElement('li');
     li.className = 'specItem';
-    li.textContent = cardArr[j].spec[1];
+    li.textContent = second;
     ul.appendChild(li);
     li = document.createElement('li');
     li.className = 'specItem';
-    li.textContent = cardArr[j].spec[2];
+    li.textContent = third;
     ul.appendChild(li);
     const popupSnapshot = document.createElement('img');
     popupSnapshot.src = cardArr[j].image;
@@ -273,7 +274,7 @@ cardArr.forEach((item, i) => {
     live.className = 'btn fontSmall live';
     live.textContent = 'Live vesrion';
     buttonBar.appendChild(live);
-    live.addEventListener('click', goToSource);
+
     img = document.createElement('img');
     img.src = 'img/live.svg';
     img.className = 'popupImg';
@@ -282,7 +283,7 @@ cardArr.forEach((item, i) => {
     source.className = 'btn fontSmall source';
     source.textContent = 'See source';
     buttonBar.appendChild(source);
-    source.addEventListener('click', goToSource);
+
     img = document.createElement('img');
     img.src = 'img/gthb.svg';
     img.className = 'popupImg';
@@ -310,7 +311,8 @@ function goToSource(url) {
       window.open(cardArr[0].sourceLink);
   }
 }
-
+live.addEventListener('click', goToSource);
+source.addEventListener('click', goToSource);
 if (window.innerWidth >= 768) {
   popupContent.classList.toggle('crop');
   popupParagraph.classList.toggle('popupParagraph');
