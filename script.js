@@ -295,27 +295,27 @@ cardArr.forEach((item, i) => {
       popupParagraph.classList.remove('desktopRight');
     }
     popup.style.display = 'block';
-    popup.style.overflow ='auto';
+    popup.style.overflow = 'auto';
   }
 
   cardContent.appendChild(details);
   details.addEventListener('click', openPopup);
+
+  if (window.innerWidth >= 768) {
+    popupContent.classList.toggle('crop');
+    popupParagraph.classList.toggle('popupParagraph');
+    popupContent.classList.toggle('desktopPopup');
+    desktopPopup.querySelector('.lng').classList.toggle('lngPopup');
+  }
+  function goToSource(g) {
+    if (g.target.className == live) {
+      window.open(cardArr[0].liveLink);
+    } else if (g.target.className == source) {
+      window.open(cardArr[0].sourceLink);
+    }
+  }
+  live.addEventListener('click', goToSource);
+  source.addEventListener('click', goToSource);
 });
 
 // Open links when popup buttons clicked
-function goToSource(url) {
-  if (live) {
-      window.open(cardArr[0].liveLink);
-  }
-  else if (source) {
-      window.open(cardArr[0].sourceLink);
-  }
-}
-live.addEventListener('click', goToSource);
-source.addEventListener('click', goToSource);
-if (window.innerWidth >= 768) {
-  popupContent.classList.toggle('crop');
-  popupParagraph.classList.toggle('popupParagraph');
-  popupContent.classList.toggle('desktopPopup');
-  desktopPopup.querySelector('.lng').classList.toggle('lngPopup');
-}
