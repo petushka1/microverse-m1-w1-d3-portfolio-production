@@ -48,6 +48,11 @@ body {
   border-radius: 10px;
 }
 
+.select {
+  display: inline-block;
+  flex-direction: unset;
+}
+
 .lngPopup {
   display: flex;
   margin-top: 15px;
@@ -58,12 +63,13 @@ body {
 
 .crop {
   width: 100%;
+  height: auto;
   aspect-ratio: 2 / 1;
   object-fit: cover;
 }
 
 .popupParagraph {
-  max-width: 60%;
+  max-width: 65%;
   float: left;
 }
 
@@ -286,7 +292,7 @@ h2 {
   border-radius: 20px;
 }
 
-.snapshot {
+.cardSnapshot {
   max-width: 45%;
   height: auto;
 }
@@ -915,8 +921,21 @@ textarea {
     margin: 0;
   }
 
-  .snapshot {
-    max-width: 100%;
+  .crop {
+    width: 100%;
     height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .select {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popupParagraph {
+    max-width: 100%;
+    float: none;
   }
 }

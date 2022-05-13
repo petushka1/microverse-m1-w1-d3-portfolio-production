@@ -143,7 +143,7 @@ cardArr.forEach((item, i) => {
   gridContainer.appendChild(card);
 
   const snapshot = document.createElement('img');
-  snapshot.className = 'snapshot';
+  snapshot.className = 'cardSnapshot';
   snapshot.src = cardArr[i].image;
   snapshot.alt = cardArr[i].alt;
   card.appendChild(snapshot);
@@ -211,7 +211,7 @@ cardArr.forEach((item, i) => {
     popup.appendChild(popupContent);
 
     img = document.createElement('img');
-    img.src = './img/closeDark.svg';
+    img.src = 'img/closeDark.svg';
     img.className = 'close';
     popupContent.appendChild(img);
     img.addEventListener('click', closePopup);
@@ -301,8 +301,6 @@ cardArr.forEach((item, i) => {
     source.addEventListener('click', goToSource);
 
     if (window.innerWidth < 768) {
-      popupSnapshot.classList.toggle('snapshot');
-      popupSnapshot.classList.remove('crop');
       popupParagraph.classList.remove('popupParagraph');
       popupParagraph.classList.remove('desktopRight');
     }
