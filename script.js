@@ -211,7 +211,7 @@ cardArr.forEach((item, i) => {
     popup.appendChild(popupContent);
 
     img = document.createElement('img');
-    img.src = 'img/closeDark.svg';
+    img.src = 'Img/closeDark.svg';
     img.className = 'close';
     popupContent.appendChild(img);
     img.addEventListener('click', closePopup);
@@ -310,4 +310,22 @@ cardArr.forEach((item, i) => {
 
   cardContent.appendChild(details);
   details.addEventListener('click', openPopup);
+});
+
+// Contact form validation
+const contactForm = document.querySelector('#contactForm');
+const email = contactForm.elements['mail'];
+const userName = contactForm.elements['username'];
+let validationMassege = contactForm.querySelector('#error');
+
+contactForm.addEventListener('submit', (event) => {
+  let isValid = false;
+  if (email.value === email.value.toLowerCase()) {
+    isValid = true;
+    console.log(isValid);
+  }
+  if (isValid === false) {
+    event.preventDefault();
+    validationMassege.innerText = 'Only Lower Case Symbols Allowed';
+  }
 });
