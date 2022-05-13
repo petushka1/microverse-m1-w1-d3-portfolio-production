@@ -205,7 +205,12 @@ cardArr.forEach((item, i) => {
     function closePopup() {
       popup.style.display = 'none';
     }
-
+    function goToLive() {
+      window.open(cardArr[0].liveLink);
+    }
+    function goToSource() {
+      window.open(cardArr[0].sourceLink);
+    }
     const popupContent = document.createElement('div');
     popupContent.className = 'popupContent fontSmall';
     popup.appendChild(popupContent);
@@ -303,12 +308,6 @@ cardArr.forEach((item, i) => {
   cardContent.appendChild(details);
   details.addEventListener('click', openPopup);
 
-  function goToLive() {
-    window.open(cardArr[0].liveLink);
-  }
-  function goToSource() {
-    window.open(cardArr[0].sourceLink);
-  }
   live.addEventListener('click', goToLive);
   source.addEventListener('click', goToSource);
 });
