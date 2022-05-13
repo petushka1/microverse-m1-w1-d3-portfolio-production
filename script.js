@@ -316,6 +316,7 @@ cardArr.forEach((item, i) => {
 const contactForm = document.querySelector('#contactForm');
 const email = contactForm.elements.mail;
 const validationMassege = contactForm.querySelector('#error');
+
 validationMassege.style.color = '#fff';
 validationMassege.style.backgroundImage = 'linear-gradient(90deg, rgba(252,108,172,1) 50%, rgba(207,66,255,1) 100%)';
 validationMassege.style.fontSize = '14px';
@@ -335,3 +336,23 @@ contactForm.addEventListener('submit', (event) => {
     }, 2000);
   }
 });
+
+const storage = {
+  name: '',
+  email: '',
+  textMsg: '',
+};
+
+function receiveData() {
+  storage.name = document.getElementById('username').value;
+  storage.email = document.getElementById('mail').value;
+  storage.textMsg = document.getElementById('msg').value;
+  localStorage.setItem('storedData', JSON.stringify(storage));
+}
+
+contactForm.addEventListener('change', receiveData);
+
+const storageInfo = JSON.parse(localStorage.getItem('storedData'));
+document.getElementById('msg').value = storageInfo.textMsg;
+document.getElementById('username').value = storageInfo.name;
+document.getElementById('mail').value = storageInfo.email;
