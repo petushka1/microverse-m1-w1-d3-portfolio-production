@@ -314,17 +314,15 @@ cardArr.forEach((item, i) => {
 
 // Contact form validation
 const contactForm = document.querySelector('#contactForm');
-const email = contactForm.elements['mail'];
-const userName = contactForm.elements['username'];
-let validationMassege = contactForm.querySelector('#error');
-    validationMassege.style.color = 'red';
-    validationMassege.style.fontSize = '12px'
+const email = contactForm.elements.mail;
+const validationMassege = contactForm.querySelector('#error');
+validationMassege.style.color = 'red';
+validationMassege.style.fontSize = '12px';
 
 contactForm.addEventListener('submit', (event) => {
   let isValid = false;
   if (email.value === email.value.toLowerCase()) {
     isValid = true;
-    console.log(isValid);
   }
   if (isValid === false) {
     event.preventDefault();
@@ -332,6 +330,5 @@ contactForm.addEventListener('submit', (event) => {
     setTimeout(() => {
       validationMassege.textContent = '';
     }, 2000);
-    
   }
 });
