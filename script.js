@@ -316,8 +316,12 @@ cardArr.forEach((item, i) => {
 const contactForm = document.querySelector('#contactForm');
 const email = contactForm.elements.mail;
 const validationMassege = contactForm.querySelector('#error');
-validationMassege.style.color = 'red';
-validationMassege.style.fontSize = '12px';
+
+validationMassege.style.color = '#fff';
+validationMassege.style.backgroundImage = 'linear-gradient(90deg, rgba(252,108,172,1) 50%, rgba(207,66,255,1) 100%)';
+validationMassege.style.fontSize = '14px';
+validationMassege.style.padding = '0 0 0 4px';
+validationMassege.style.borderRadius = '2px';
 
 contactForm.addEventListener('submit', (event) => {
   let isValid = false;
