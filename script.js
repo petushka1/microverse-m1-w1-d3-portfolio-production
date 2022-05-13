@@ -317,6 +317,8 @@ const contactForm = document.querySelector('#contactForm');
 const email = contactForm.elements['mail'];
 const userName = contactForm.elements['username'];
 let validationMassege = contactForm.querySelector('#error');
+    validationMassege.style.color = 'red';
+    validationMassege.style.fontSize = '12px'
 
 contactForm.addEventListener('submit', (event) => {
   let isValid = false;
@@ -327,5 +329,9 @@ contactForm.addEventListener('submit', (event) => {
   if (isValid === false) {
     event.preventDefault();
     validationMassege.innerText = 'Only Lower Case Symbols Allowed';
+    setTimeout(() => {
+      validationMassege.textContent = '';
+    }, 2000);
+    
   }
 });
