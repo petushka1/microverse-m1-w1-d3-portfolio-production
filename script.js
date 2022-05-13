@@ -332,6 +332,25 @@ contactForm.addEventListener('submit', (event) => {
     setTimeout(() => {
       validationMassege.textContent = '';
     }, 2000);
-    
   }
 });
+
+const storage = {
+  name: '',
+  email: '',
+  textMsg: '',
+}
+
+function receiveData() {
+  storage.name = document.getElementById('username').value;
+  storage.email = document.getElementById('mail').value;
+  storage.textMsg = document.getElementById('msg').value;
+  localStorage.setItem('storedData', JSON.stringify(storage));
+}
+
+contactForm.addEventListener('change', receiveData);
+
+const storageInfo = JSON.parse(localStorage.getItem('storage'));
+document.getElementById('msg').value = storageInfo.textMsg;
+document.getElementById('username').value = storageInfo.name;
+document.getElementById('mail').value = storageInfo.email;
