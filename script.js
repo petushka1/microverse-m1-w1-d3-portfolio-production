@@ -69,15 +69,14 @@ window.addEventListener('resize', resetMenu);
 const cardArr = [
   {
     id: '0',
-    name: 'Tonic',
-    spec: ['CANOPY', 'Back End Dev', '2015'],
-    brief: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: 'Img/SnapshootPortfolio3.png',
+    name: 'Fixarta',
+    spec: ['Fixarta', 'CEO, Product management, UI/UX', '2020'],
+    brief: 'A verification web-application focused on physical collectibles and powered on Ethereum Blockchain and Devery.io open-source protocol',
+    image: 'Img/fixarta_1.png',
     alt: 'project 1',
     technologies: ['html', 'css', 'javaScript'],
-    liveLink: 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production/',
-    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production',
+    liveLink: 'https://www.fixarta.com/about',
+    sourceLink: 'https://github.com/fixarta',
   },
   {
     id: '1',
@@ -125,6 +124,18 @@ const cardArr = [
     alt: 'project 1',
     technologies: ['html', 'css', 'javaScript'],
     liveLink: 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production',
+    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production',
+  },
+  {
+    id: '1',
+    name: 'Tonic',
+    spec: ['CANOPY', 'Back End Dev', '2015'],
+    brief: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: 'Img/SnapshootPortfolio2.png',
+    alt: 'project 1',
+    technologies: ['html', 'css', 'javaScript'],
+    liveLink: 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production/',
     sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production',
   },
 ];
@@ -311,7 +322,7 @@ cardArr.forEach((item, i) => {
   cardContent.appendChild(details);
   details.addEventListener('click', openPopup);
 });
-
+/*
 // Contact form validation
 const contactForm = document.querySelector('#contactForm');
 const email = contactForm.elements.mail;
@@ -333,5 +344,16 @@ contactForm.addEventListener('submit', (event) => {
     setTimeout(() => {
       validationMassege.textContent = '';
     }, 2000);
+  }
+});
+*/
+
+const emailField = document.getElementById('mail');
+emailField.addEventListener('input', function(event) {
+  if (emailField.value === emailField.value.toLowerCase()) {
+    emailField.setCustomValidity('');
+  } else {
+    emailField.setCustomValidity('Email must be in Lower Case');
+    emailField.reportValidity();
   }
 });
