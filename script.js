@@ -324,8 +324,9 @@ cardArr.forEach((item, i) => {
   details.addEventListener('click', openPopup);
 });
 
+/*eslint-disable */
 const emailField = document.getElementById('mail');
-emailField.addEventListener('input', function(event) {
+emailField.addEventListener('input', (event) => {
   if (emailField.value === emailField.value.toLowerCase()) {
     emailField.setCustomValidity('');
   } else {
@@ -333,3 +334,4 @@ emailField.addEventListener('input', function(event) {
     emailField.reportValidity();
   }
 });
+/*eslint-disable */
