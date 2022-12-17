@@ -70,9 +70,9 @@ const cardArr = [
   {
     id: '0',
     name: 'Fixarta',
-    spec: ['WEB-APP', 'CEO, Product management, UI/UX', '2020'],
+    spec: ['Webapp', 'CEO, UI/UX', '2020'],
     brief: 'Verification app for Art and Fashion',
-    description: 'A verification web-application focused on physical collectibles and powered on Ethereum Blockchain and Devery.io open-source protocol'
+    description: 'A verification web-application focused on physical collectibles and powered on Ethereum Blockchain and Devery.io open-source protocol',
     image: 'Img/fixarta_1.png',
     alt: 'fixarta',
     technologies: ['Node.js', 'React', 'PHP', 'SQL', 'DeveryJs'],
@@ -118,7 +118,7 @@ const cardArr = [
   {
     id: '4',
     name: 'Leaderboard',
-    spec: ['Web-app', 'Full-stack Dev', '2022'],
+    spec: ['Webapp', 'Full-stack Dev', '2022'],
     brief: 'Game Leaderboard',
     description: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data with a use the external Leaderboard API service.',
     image: 'Img/leaderboard.png',
@@ -130,7 +130,7 @@ const cardArr = [
   {
     id: '5',
     name: 'To-do List',
-    spec: ['Web-app', 'Full-stack Dev', '2022'],
+    spec: ['Webapp', 'Full-stack Dev', '2022'],
     brief: 'Game Leaderboard',
     description: 'A To-do webapp that allows user to add, remove, edit tasks and mark task as completed',
     image: 'Img/to-do.png',
