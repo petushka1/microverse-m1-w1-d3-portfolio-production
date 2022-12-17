@@ -25,7 +25,7 @@ function resetMenu() {
 
 div.className = 'extended';
 img.className = 'icon';
-img.src = './img/close.svg';
+img.src = './Img/close.svg';
 div.appendChild(img);
 img.addEventListener('click', closed);
 
@@ -290,7 +290,7 @@ cardArr.forEach((item, i) => {
     buttonBar.appendChild(live);
 
     img = document.createElement('img');
-    img.src = 'img/live.svg';
+    img.src = 'Img/live.svg';
     img.className = 'popupImg';
     live.appendChild(img);
     const source = document.createElement('button');
@@ -300,7 +300,7 @@ cardArr.forEach((item, i) => {
     buttonBar.appendChild(source);
 
     img = document.createElement('img');
-    img.src = 'img/gthb.svg';
+    img.src = 'Img/gthb.svg';
     img.className = 'popupImg';
     source.appendChild(img);
     function goToLive() {
