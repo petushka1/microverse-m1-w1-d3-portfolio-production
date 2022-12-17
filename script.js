@@ -69,63 +69,75 @@ window.addEventListener('resize', resetMenu);
 const cardArr = [
   {
     id: '0',
-    name: 'Tonic',
-    spec: ['CANOPY', 'Back End Dev', '2015'],
-    brief: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: 'Img/SnapshootPortfolio3.png',
-    alt: 'project 1',
-    technologies: ['html', 'css', 'javaScript'],
-    liveLink: 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production/',
-    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production',
+    name: 'Fixarta',
+    spec: ['Webapp', 'CEO, UI/UX', '2020'],
+    brief: 'Verification app for Art and Fashion',
+    description: 'A verification web-application focused on physical collectibles and powered on Ethereum Blockchain and Devery.io open-source protocol',
+    image: 'Img/fixarta_1.png',
+    alt: 'fixarta',
+    technologies: ['Node.js', 'React', 'PHP', 'SQL', 'DeveryJs'],
+    liveLink: 'https://www.fixarta.com/about',
+    sourceLink: 'https://github.com/fixarta',
   },
   {
     id: '1',
-    name: 'Tonic',
-    spec: ['CANOPY', 'Back End Dev', '2015'],
-    brief: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: 'Img/SnapshootPortfolio2.png',
-    alt: 'project 1',
-    technologies: ['html', 'css', 'javaScript'],
-    liveLink: 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production/',
-    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production',
+    name: 'NFT Explorer',
+    spec: ['POC', 'Frontend Dev, UI/UX design', '2022'],
+    brief: 'XRPL NFT Explorer by Taxon',
+    description: 'Designed to extend XRPL NFT Standard. NFT are combined into Collection by the same taxon customized and written on blockchain',
+    image: 'Img/fixarta_2.png',
+    alt: 'noft explorer',
+    technologies: ['Pug', 'css', 'Node.js', 'XRPL'],
+    liveLink: 'https://fixarta-xrpl-nft-explorer.herokuapp.com/',
+    sourceLink: 'https://github.com/petushka1/xrpl-Non-Fungible-Token-Product-Edition-Proposal/tree/nft-explorer-group-by-taxon',
   },
   {
     id: '2',
-    name: 'Tonic',
-    spec: ['CANOPY', 'Back End Dev', '2015'],
-    brief: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: 'Img/SnapshootPortfolio3.png',
-    alt: 'project 1',
-    technologies: ['html', 'css', 'javaScript'],
-    liveLink: 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production/',
-    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production',
+    name: 'Mob ART Explorer',
+    spec: ['App', 'Full-stack Dev', '2022'],
+    brief: 'Chicago Institute of Art Explorer.',
+    description: 'App built on top of Chicago Institute of Art API. Provides a list of exhibitions, artists and artworks by every specific artist.',
+    image: 'Img/chicago.png',
+    alt: 'art explorer',
+    technologies: ['html', 'css', 'React', 'Redux', 'React Testing Library', 'npm', 'webpack'],
+    liveLink: 'https://deploy-preview-2--darling-moxie-0f9a2b.netlify.app/',
+    sourceLink: 'https://github.com/petushka1/chicago-art-mob-explorer',
   },
   {
     id: '3',
-    name: 'Tonic',
-    spec: ['CANOPY', 'Back End Dev', '2015'],
-    brief: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: 'Img/SnapshootPortfolio.png',
-    alt: 'project 1',
-    technologies: ['html', 'css', 'javaScript'],
-    liveLink: 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production/',
-    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production',
+    name: 'Bookstore',
+    spec: ['App', 'Full-stack Dev', '2022'],
+    brief: 'Book Store application',
+    description: 'Application allows users adding new books and remove books added previousely',
+    image: 'Img/bookstore.png',
+    alt: 'bookstore',
+    technologies: ['html', 'css', 'React', 'Redux', 'Node.js', 'npm'],
+    liveLink: 'https://bookstore-project-microverse.herokuapp.com/',
+    sourceLink: 'https://github.com/petushka1/bookstore',
   },
   {
     id: '4',
-    name: 'Tonic',
-    spec: ['CANOPY', 'Back End Dev', '2015'],
-    brief: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: 'Img/SnapshootPortfolio.png',
-    alt: 'project 1',
-    technologies: ['html', 'css', 'javaScript'],
-    liveLink: 'https://petushka1.github.io/microverse-m1-w1-d3-portfolio-production',
-    sourceLink: 'https://github.com/petushka1/microverse-m1-w1-d3-portfolio-production',
+    name: 'Leaderboard',
+    spec: ['Webapp', 'Full-stack Dev', '2022'],
+    brief: 'Game Leaderboard',
+    description: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data with a use the external Leaderboard API service.',
+    image: 'Img/leaderboard.png',
+    alt: 'leaderboard',
+    technologies: ['html', 'css', 'JavaScript', 'Node.js', 'npm'],
+    liveLink: 'https://petushka1.github.io/Leaderboard/',
+    sourceLink: 'https://github.com/petushka1/Leaderboard/tree/project-style',
+  },
+  {
+    id: '5',
+    name: 'To-do List',
+    spec: ['Webapp', 'Full-stack Dev', '2022'],
+    brief: 'Game Leaderboard',
+    description: 'A To-do webapp that allows user to add, remove, edit tasks and mark task as completed',
+    image: 'Img/to-do.png',
+    alt: 'leaderboard',
+    technologies: ['html', 'css', 'JavaScript', 'Node.js', 'npm'],
+    liveLink: 'https://github.com/petushka1/to-do-list-revised',
+    sourceLink: 'https://petushka1.github.io/to-do-list-revised/',
   },
 ];
 
@@ -312,26 +324,14 @@ cardArr.forEach((item, i) => {
   details.addEventListener('click', openPopup);
 });
 
-// Contact form validation
-const contactForm = document.querySelector('#contactForm');
-const email = contactForm.elements.mail;
-const validationMassege = contactForm.querySelector('#error');
-validationMassege.style.color = '#fff';
-validationMassege.style.backgroundImage = 'linear-gradient(90deg, rgba(252,108,172,1) 50%, rgba(207,66,255,1) 100%)';
-validationMassege.style.fontSize = '14px';
-validationMassege.style.padding = '0 0 0 4px';
-validationMassege.style.borderRadius = '2px';
-
-contactForm.addEventListener('submit', (event) => {
-  let isValid = false;
-  if (email.value === email.value.toLowerCase()) {
-    isValid = true;
-  }
-  if (isValid === false) {
-    event.preventDefault();
-    validationMassege.innerText = 'Only Lower Case Symbols Allowed';
-    setTimeout(() => {
-      validationMassege.textContent = '';
-    }, 2000);
+/*eslint-disable */
+const emailField = document.getElementById('mail');
+emailField.addEventListener('input', (event) => {
+  if (emailField.value === emailField.value.toLowerCase()) {
+    emailField.setCustomValidity('');
+  } else {
+    emailField.setCustomValidity('Email must be in Lower Case');
+    emailField.reportValidity();
   }
 });
+/*eslint-disable */

@@ -313,7 +313,6 @@ h2 {
 
 .card {
   display: flex;
-  justify-content: center;
   align-self: stretch;
   align-items: flex-start;
   background-color: #fff;
